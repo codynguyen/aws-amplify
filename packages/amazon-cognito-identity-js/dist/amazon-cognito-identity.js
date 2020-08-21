@@ -1,18 +1,18 @@
 /*!
  * Copyright 2016 Amazon.com,
  * Inc. or its affiliates. All Rights Reserved.
- * 
+ *
  * Licensed under the Amazon Software License (the "License").
  * You may not use this file except in compliance with the
  * License. A copy of the License is located at
- * 
+ *
  *     http://aws.amazon.com/asl/
- * 
+ *
  * or in the "license" file accompanying this file. This file is
  * distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR
  * CONDITIONS OF ANY KIND, express or implied. See the License
  * for the specific language governing permissions and
- * limitations under the License. 
+ * limitations under the License.
  */
 
 
@@ -5173,10 +5173,10 @@ return /******/ (function(modules) { // webpackBootstrap
 	      }
 	      _this13.Session = data.Session;
 	      if (answerChallenge === 'SMS_MFA') {
-	        return callback.mfaRequired(data.challengeName, data.challengeParameters);
+	        return callback.mfaRequired(data.ChallengeName, data.ChallengeParameters);
 	      }
 	      if (answerChallenge === 'SOFTWARE_TOKEN_MFA') {
-	        return callback.totpRequired(data.challengeName, data.challengeParameters);
+	        return callback.totpRequired(data.ChallengeName, data.ChallengeParameters);
 	      }
 	      return undefined;
 	    });
@@ -5764,7 +5764,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	  return {
 	    update: function (data) {
 	      if(!Buffer.isBuffer(data)) data = new Buffer(data)
-	        
+
 	      bufs.push(data)
 	      length += data.length
 	      return this
@@ -7077,7 +7077,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 27 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	
+
 	/**
 	 * A JavaScript implementation of the Secure Hash Algorithm, SHA-256, as defined
 	 * in FIPS 180-2
